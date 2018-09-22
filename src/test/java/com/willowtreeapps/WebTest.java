@@ -55,7 +55,11 @@ public class WebTest {
                 .validateCountersAfterRandomSelections(10);
     }
 
-
+    @Test
+    public void test_name_and_picture_change_after_correct_answer() {
+        new HomePage(driver)
+                .validateNameAndPictureChangeAfterCorrectAnswer();
+    }
 
     @After
     public void teardown() {
